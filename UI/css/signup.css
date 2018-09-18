@@ -1,0 +1,75 @@
+/*entire navigation bar*/
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+}
+
+li {
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px 10px 20px;
+}
+li :hover {
+    background-color: rgb(196, 176, 245);
+}
+
+
+/*for all navigation bar items apart from logo*/
+#nav, #home {
+    float: right;
+    font-size: 20px;
+    color: blueviolet;
+}
+
+#logo {
+    float: left;
+    font-family: cursive;
+    font-size: 30px;
+    color:red;
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 50px;
+    color: white;
+    padding:0px 200px 0px 200px;
+    text-align: center;
+}
+/* the form */
+#register-form {
+    margin: 40px 40px 70px 400px;
+    width: 300px;
+    height: auto;
+}
+input {
+    margin-bottom: 10px;
+    padding:10px 10px 10px 10px;
+    width:200%;
+    border: 0px;
+    font-size: 1em;
+    background: gainsboro;
+}
+button{
+    margin: 10px 10px 10px 150px;
+    padding: 10px;
+    background-color:rgb(17, 146, 17);
+    width: 100%;
+    color: beige;
+    font-size: 1em;
+}
+label {
+    font-family: cursive;
+    color: beige;
+    font-size: 15px;
+    margin: 0px 10px 100px 40px;
+
+} 
+#signin { 
+    color: rgb(17, 146, 17);     
+}
+.signup{
+    align-self: center;
+    margin-top: 110px;
+}

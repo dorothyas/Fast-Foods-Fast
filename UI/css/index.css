@@ -1,0 +1,55 @@
+/*entire navigation bar*/
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+
+}
+li {
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px 10px 20px;
+
+}
+li :hover {
+    background-color: rgb(196, 176, 245);
+}
+
+/*for all navigation bar items apart from logo*/
+#nav, #home {
+    float: right;
+    font-size: 20px;
+    color: blueviolet;
+}
+/* the Fast-foods-fast logo*/
+#logo {
+    float: left;
+    font-family: cursive;
+    font-size: 30px;
+    color:red;
+}
+.message {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    margin: 10px 30px 0px 30px;
+    color: white;
+}
+
+h2{
+    font-size: 50px;
+    color: white;
+    padding:0px 200px 0px 200px;  
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    color: red;
+    padding:0px 30px 0px 350px;
+    margin: 40px 30px 0px 30px;
+}
