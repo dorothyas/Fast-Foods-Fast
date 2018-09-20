@@ -14,3 +14,6 @@ class OrderList:
             self.orders_count[foodname] = 1
             self.orders[foodname] = Order(foodname, quantity, location )
         return self.orders
+
+    def get_all_orders(self):
+        return list(self.orders.keys())
