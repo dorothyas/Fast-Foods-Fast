@@ -19,7 +19,6 @@ class TestFastFoods(unittest.TestCase):
             dict(FoodName='', Quantity=1, location='ntinda')), content_type='application/json')
         self.assertEqual(res.status_code, 400)
     
-
     def test_can_get_all_orders(self):
         res = self.client.get('/v1/orders')
         self.assertEqual(res.status_code, 200)
@@ -36,9 +35,6 @@ class TestFastFoods(unittest.TestCase):
             dict(order_status="success")))
         self.assertEqual(res.status_code, 201)    
 
-
-    
-    
 
 if __name__ == '__main__':
     unittest.main()
