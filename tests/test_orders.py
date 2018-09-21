@@ -12,7 +12,7 @@ class TestFastFoods(unittest.TestCase):
       
     def test_can_add_order(self):
         res = self.client.post('/v1/orders', data=json.dumps(
-            dict(FoodName='beef', Quantity=3, location='Ebb')), content_type='application/json')
+            dict(FoodName='beef', Quantity=3, Location='Ebb')), content_type='application/json')
         self.assertEqual(res.status_code, 200)
 
         res = self.client.post('/v1/orders', data=json.dumps(
