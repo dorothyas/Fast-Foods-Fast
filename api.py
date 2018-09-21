@@ -14,9 +14,9 @@ def addOrder():
     orders.append(userOrder)
     return jsonify({'orders': orders})
 
-#@app.route('/v1/orders',methods=['GET'])
-#def allOrders():
-#    return jsonify({'orders' : orders})
+@app.route('/v1/orders',methods=['GET'])
+def allOrders():
+    return jsonify({'orders' : orders})
 
     
 
