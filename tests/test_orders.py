@@ -1,44 +1,40 @@
 import unittest
 
 from api import app
-from app.order import Order
-from app.orders import OrderList
+from flask import json
+
 
 
 class TestFastFoods(unittest.TestCase):
     def setUp(self):
         self.app= app
         self.client = self.app.test_client()
-        self.order_list = OrderList()
-        self.sample_order = {
-            'foodname' :'beef', 
-            'quantity' : 2, 
-            'location' : 'ebb'
-            }
-        self.new_order = {
-            'foodname' :'posho', 
-            'quantity' : 1, 
-            'location' : 'ntinda'
-            }
+      
+    def test_can_add_order(self):
+        res = self.client.post('/v1/orders', data=json.dumps(
+            dict(FoodName='beef', Quantity=3, location='Ebb')), content_type='application/json')
+        self.assertEqual(res.status_code, 200)
 
-    '''def test_can_add_order(self):
-        self.assertEqual(len(self.order_list.orders), 0)
-        self.order_list.add_order(**self.sample_order)
-        self.assertEqual(len(self.order_list.orders), 1)'''
-   
+        res = self.client.post('/v1/orders', data=json.dumps(
+            dict(FoodName='', Quantity=1, location='ntinda')), content_type='application/json')
+        self.assertEqual(res.status_code, 400)
+    
 
     def test_can_get_all_orders(self):
-        self.assertEqual(len(self.order_list.get_all_orders()), 0)
-        self.order_list.add_order(**self.sample_order)
-        self.order_list.add_order(**self.new_order)
-        self.assertEqual(len(self.order_list.get_all_orders()), 2)
         res = self.client.get('/v1/orders')
         self.assertEqual(res.status_code, 200)
 
-    '''def test_can_get_one_order(self):
-        self.assertIsNone(self.order_list.get_one_order(0))
-        self.order_list.add_order(**self.sample_order)
-        self.assertTrue(self.order_list.get_one_order(1))'''
+        res_1 = self.client.get('/v1/orders/f')
+        self.assertEqual(res_1.status_code, 404)
+
+    def test_can_get_one_order(self):
+        res = self.client.get('/v1/orders/1')
+        self.assertEqual(res.status_code, 200)
+
+    def test_can_edit_order(self):
+        res = self.client.put('v1/orders/1', content_type='application/json',data=json.dumps(
+            dict(order_status="success")))
+        self.assertEqual(res.status_code, 201)    
 
 
     
