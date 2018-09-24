@@ -13,6 +13,8 @@ def addOrder():
 
     orders.append(userOrder)
     return jsonify({'orders': orders})
+    if not request.json['foodname']:
+        return jsonsify({'food name is empty'}), 400
 
 @app.route('/v1/orders',methods=['GET'])
 def allOrders():
