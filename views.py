@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 
-orders =[{"FoodName":"beef","Quantity":5,"Location":"KLA",'orderId' : 1 }]
+orders =[]
 
 @app.route('/v1/orders',methods=['POST'])
 def addOrder():
@@ -13,8 +13,6 @@ def addOrder():
 
     orders.append(userOrder)
     return jsonify({'orders': orders})
-    if not request.json['foodname']:
-        return jsonsify({'food name is empty'}), 400
 
 @app.route('/v1/orders',methods=['GET'])
 def allOrders():
