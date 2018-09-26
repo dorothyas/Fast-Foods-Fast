@@ -7,46 +7,64 @@
 A food delivery service app for a restaurant 
 
 Built with:
+
 User Interface:
-HTML5
-CSS3
+
+•	HTML5
+
+•	CSS3
 
 API endpoints:
-Language: Python 3
-Server side framework: Flask
-Testing Framework: unittest
+
+•	Language: Python 3
+
+•	Server side framework: Flask
+
+•	Testing Framework: unittest
 
 Deployment:
-Heroku
+
+•	Heroku
 
 Project functionality
 UIs
-User can signup and login.
-User can order for food.
-Admin can see a list of orders.
-Admin can accept and decline offers.
-Admin can mark orders as completed.
-Client can see a history of ordered food.
+
+•	User can signup and login.
+
+•	User can order for food.
+
+•	Admin can see a list of orders.
+
+•	Admin can accept and decline offers.
+
+•	Admin can mark orders as completed.
+
+•	Client can see a history of ordered food.
 
 API endpoints
 
-Get a list of all orders.
-Fetch a specific order.
-Place a new order.
-Update the status of an order.
-getting the application on the local machine.
+•	Get a list of all orders.
 
+•	Fetch a specific order.
+
+•	Place a new order.
+
+•	Update the status of an order
 
 Project links:
-Github Pages: https://dorothyas.github.io/fastfoodfast.dorothyas.github.io/
 
-Github: https://github.com/dorothyas/Fast-Foods-Fast/tree/feature/UI 
+•	Github Pages: https://dorothyas.github.io/fastfoodfast.dorothyas.github.io/
 
-API endpoints:https://github.com/dorothyas/Fast-Foods-Fast/tree/develop
 
-Heroku: 
+•	Github: https://github.com/dorothyas/Fast-Foods-Fast/tree/feature/UI 
+
+
+•	API endpoints:https://github.com/dorothyas/Fast-Foods-Fast/tree/develop
+
+
+•	Heroku: 
 
 
 Author:
 Dorothy Asiimwe
-https://github.com/dorothyas
+•	https://github.com/dorothyas
