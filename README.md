@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/dorothyas/Fast-Foods-Fast.svg?branch=develop)](https://travis-ci.com/dorothyas/Fast-Foods-Fast)
 
 
-[![Coverage Status](https://coveralls.io/repos/github/dorothyas/Fast-Foods-Fast/badge.svg?branch=master)](https://coveralls.io/github/dorothyas/Fast-Foods-Fast?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/dorothyas/Fast-Foods-Fast/badge.svg?branch=develop)](https://coveralls.io/github/dorothyas/Fast-Foods-Fast?branch=master)
 
 # Fast-Foods-Fast
 A food delivery service app for a restaurant 
