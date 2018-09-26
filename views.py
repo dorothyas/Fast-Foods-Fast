@@ -30,7 +30,7 @@ def edit(orderId):
     order1[0]['FoodName'] = request.json['FoodName']
     order1[0]['Quantity']= request.json['Quantity']
     order1[0]['Location']= request.json['Location']
-    return jsonify({'order': order1})
+    return jsonify({'order': order1}, 201)
 
     
 
