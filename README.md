@@ -1,4 +1,6 @@
-[![travis build](https://img.shields.io/travis/dorothyas/fastfoodfast.dorothyas.svg)](https://travis-ci.com/dorothyas/Fast-Foods-Fast)
+[![Build Status](https://travis-ci.com/dorothyas/Fast-Foods-Fast.svg?branch=develop)](https://travis-ci.com/dorothyas/Fast-Foods-Fast)
+
+
 [![Coverage Status](https://coveralls.io/repos/github/dorothyas/Fast-Foods-Fast/badge.svg?branch=master)](https://coveralls.io/github/dorothyas/Fast-Foods-Fast?branch=master)
 
 # Fast-Foods-Fast
