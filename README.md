@@ -11,11 +11,13 @@ User Interface:
 •	CSS3
 
 API endpoints:
+
 •	Language: Python 3
 •	Server side framework: Flask
 •	Testing Framework: unittest
 
 Deployment:
+
 •	Heroku
 
 Project functionality
