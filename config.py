@@ -1,15 +1,19 @@
 class Config(object):
+    TESTING = False
+    DEBUG = False
 
-    class DevelopmentConfig(Config):
+class DevelopmentConfig(Config):
         DEBUG = True
 
 
-    class ProductionConfig(Config):
+class ProductionConfig(Config):
 
-        DEBUG = False
-        TESTING = False
+    DEBUG = False
+    TESTING = False
 
-    class TestingConfig(Config):
+class TestingConfig(Config):
 
-        DEBUG = True
-        TESTING = True
+    DEBUG = True
+    TESTING = True
+
+        
