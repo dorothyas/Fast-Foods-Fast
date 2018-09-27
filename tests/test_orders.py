@@ -1,6 +1,6 @@
 import unittest
 
-from views import app
+from app.views import app
 from flask import json
 
 
