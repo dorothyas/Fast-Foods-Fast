@@ -32,6 +32,5 @@ def edit(orderId):
     order1[0]['Location']= request.json['Location']
     return jsonify({'order': order1})
 
-if __name__ == '__main__':
-    app.run()
+
 
