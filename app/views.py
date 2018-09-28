@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 
-orders =[]
+orders = [] 
 
 @app.route('/v1/orders',methods=['POST'])
 def addOrder():
