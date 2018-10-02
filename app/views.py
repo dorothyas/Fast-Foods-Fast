@@ -21,7 +21,10 @@ def allOrders():
 @app.route('/v1/orders/<int:orderId>',methods=['GET'])
 def oneOrder(orderId):
     order = [order for order in orders if order ['orderId'] == orderId] 
-    return jsonify({'orders' : order})
+    if order['orderId'] in order:    
+        return (jsonify({'orders' : order}))
+    else:
+        print("order not found")    
 
 
 @app.route('/v1/orders/<int:orderId>',methods=['PUT'])
@@ -34,3 +37,6 @@ def edit(orderId):
 
 
 
+
+if __name__ == '__main__':
+    app.run()
